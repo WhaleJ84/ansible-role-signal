@@ -1,0 +1,7 @@
+---
+- name: Update apt repository
+  become: True
+  changed_when: False
+  ansible.builtin.apt:
+    update_cache: True
+
